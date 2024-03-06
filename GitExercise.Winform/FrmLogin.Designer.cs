@@ -39,24 +39,24 @@ partial class FrmLogin
         label1.AutoSize = true;
         label1.Location = new Point(34, 55);
         label1.Name = "label1";
-        label1.Size = new Size(78, 20);
+        label1.Size = new Size(105, 20);
         label1.TabIndex = 0;
-        label1.Text = "UserName";
+        label1.Text = "tên đăng nhập";
         // 
         // txtUserName
         // 
-        txtUserName.Location = new Point(112, 51);
+        txtUserName.Location = new Point(145, 51);
         txtUserName.Margin = new Padding(3, 4, 3, 4);
         txtUserName.Name = "txtUserName";
-        txtUserName.Size = new Size(270, 27);
+        txtUserName.Size = new Size(237, 27);
         txtUserName.TabIndex = 1;
         // 
         // txtmatkhau
         // 
-        txtmatkhau.Location = new Point(112, 86);
+        txtmatkhau.Location = new Point(145, 86);
         txtmatkhau.Margin = new Padding(3, 4, 3, 4);
         txtmatkhau.Name = "txtmatkhau";
-        txtmatkhau.Size = new Size(270, 27);
+        txtmatkhau.Size = new Size(237, 27);
         txtmatkhau.TabIndex = 3;
         // 
         // label2
@@ -66,7 +66,7 @@ partial class FrmLogin
         label2.Name = "label2";
         label2.Size = new Size(70, 20);
         label2.TabIndex = 2;
-        label2.Text = "Mật khẩu";
+        label2.Text = "mật khẩu";
         // 
         // FrmLogin
         // 
