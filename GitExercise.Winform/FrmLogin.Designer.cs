@@ -30,32 +30,53 @@ partial class FrmLogin
     {
         label1 = new Label();
         txtUserName = new TextBox();
+        txtmatkhau = new TextBox();
+        label2 = new Label();
         SuspendLayout();
         // 
         // label1
         // 
         label1.AutoSize = true;
-        label1.Location = new Point(30, 41);
+        label1.Location = new Point(34, 55);
         label1.Name = "label1";
-        label1.Size = new Size(62, 15);
+        label1.Size = new Size(78, 20);
         label1.TabIndex = 0;
         label1.Text = "UserName";
         // 
         // txtUserName
         // 
-        txtUserName.Location = new Point(98, 38);
+        txtUserName.Location = new Point(112, 51);
+        txtUserName.Margin = new Padding(3, 4, 3, 4);
         txtUserName.Name = "txtUserName";
-        txtUserName.Size = new Size(237, 23);
+        txtUserName.Size = new Size(270, 27);
         txtUserName.TabIndex = 1;
+        // 
+        // txtmatkhau
+        // 
+        txtmatkhau.Location = new Point(112, 86);
+        txtmatkhau.Margin = new Padding(3, 4, 3, 4);
+        txtmatkhau.Name = "txtmatkhau";
+        txtmatkhau.Size = new Size(270, 27);
+        txtmatkhau.TabIndex = 3;
+        // 
+        // label2
+        // 
+        label2.AutoSize = true;
+        label2.Location = new Point(34, 90);
+        label2.Name = "label2";
+        label2.Size = new Size(70, 20);
+        label2.TabIndex = 2;
+        label2.Text = "Mật khẩu";
         // 
         // FrmLogin
         // 
-        AutoScaleDimensions = new SizeF(7F, 15F);
+        AutoScaleDimensions = new SizeF(8F, 20F);
         AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(373, 177);
+        ClientSize = new Size(426, 236);
+        Controls.Add(txtmatkhau);
+        Controls.Add(label2);
         Controls.Add(txtUserName);
         Controls.Add(label1);
-        Margin = new Padding(3, 2, 3, 2);
         Name = "FrmLogin";
         Text = "Đăng nhập";
         ResumeLayout(false);
@@ -66,4 +87,6 @@ partial class FrmLogin
 
     private Label label1;
     private TextBox txtUserName;
+    private TextBox txtmatkhau;
+    private Label label2;
 }
