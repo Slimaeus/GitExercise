@@ -38,56 +38,57 @@ partial class FrmLogin
         // label1
         // 
         label1.AutoSize = true;
-        label1.Location = new Point(30, 41);
+        label1.Location = new Point(34, 55);
         label1.Name = "label1";
-        label1.Size = new Size(84, 15);
+        label1.Size = new Size(105, 20);
         label1.TabIndex = 0;
         label1.Text = "tên đăng nhập";
         // 
         // txtUserName
         // 
-        txtUserName.Location = new Point(127, 38);
+        txtUserName.Location = new Point(145, 51);
+        txtUserName.Margin = new Padding(3, 4, 3, 4);
         txtUserName.Name = "txtUserName";
-        txtUserName.Size = new Size(208, 23);
+        txtUserName.Size = new Size(237, 27);
         txtUserName.TabIndex = 1;
         // 
         // txtpassword
         // 
-        txtpassword.Location = new Point(127, 64);
+        txtpassword.Location = new Point(145, 85);
+        txtpassword.Margin = new Padding(3, 4, 3, 4);
         txtpassword.Name = "txtpassword";
-        txtpassword.Size = new Size(208, 23);
+        txtpassword.Size = new Size(237, 27);
         txtpassword.TabIndex = 3;
         // 
         // label2
         // 
         label2.AutoSize = true;
-        label2.Location = new Point(30, 68);
+        label2.Location = new Point(34, 91);
         label2.Name = "label2";
-        label2.Size = new Size(57, 15);
+        label2.Size = new Size(70, 20);
         label2.TabIndex = 2;
         label2.Text = "mật khẩu";
         // 
         // btnlogin
         // 
-        btnlogin.Location = new Point(127, 104);
-        btnlogin.Margin = new Padding(3, 2, 3, 2);
+        btnlogin.Location = new Point(145, 139);
         btnlogin.Name = "btnlogin";
-        btnlogin.Size = new Size(208, 24);
+        btnlogin.Size = new Size(238, 32);
         btnlogin.TabIndex = 4;
         btnlogin.Text = "đăng nhập";
         btnlogin.UseVisualStyleBackColor = true;
+        btnlogin.Click += btnlogin_Click;
         // 
         // FrmLogin
         // 
-        AutoScaleDimensions = new SizeF(7F, 15F);
+        AutoScaleDimensions = new SizeF(8F, 20F);
         AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(364, 148);
+        ClientSize = new Size(416, 197);
         Controls.Add(btnlogin);
         Controls.Add(txtpassword);
         Controls.Add(label2);
         Controls.Add(txtUserName);
         Controls.Add(label1);
-        Margin = new Padding(3, 2, 3, 2);
         Name = "FrmLogin";
         Text = "Đăng nhập";
         ResumeLayout(false);
