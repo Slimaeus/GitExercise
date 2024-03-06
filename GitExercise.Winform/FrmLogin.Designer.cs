@@ -30,8 +30,9 @@ partial class FrmLogin
     {
         label1 = new Label();
         txtUserName = new TextBox();
-        txtmatkhau = new TextBox();
+        txtpassword = new TextBox();
         label2 = new Label();
+        btnlogin = new Button();
         SuspendLayout();
         // 
         // label1
@@ -51,13 +52,13 @@ partial class FrmLogin
         txtUserName.Size = new Size(237, 27);
         txtUserName.TabIndex = 1;
         // 
-        // txtmatkhau
+        // txtpassword
         // 
-        txtmatkhau.Location = new Point(145, 86);
-        txtmatkhau.Margin = new Padding(3, 4, 3, 4);
-        txtmatkhau.Name = "txtmatkhau";
-        txtmatkhau.Size = new Size(237, 27);
-        txtmatkhau.TabIndex = 3;
+        txtpassword.Location = new Point(145, 86);
+        txtpassword.Margin = new Padding(3, 4, 3, 4);
+        txtpassword.Name = "txtpassword";
+        txtpassword.Size = new Size(237, 27);
+        txtpassword.TabIndex = 3;
         // 
         // label2
         // 
@@ -68,15 +69,26 @@ partial class FrmLogin
         label2.TabIndex = 2;
         label2.Text = "mật khẩu";
         // 
+        // btnlogin
+        // 
+        btnlogin.Location = new Point(98, 107);
+        btnlogin.Name = "btnlogin";
+        btnlogin.Size = new Size(237, 23);
+        btnlogin.TabIndex = 4;
+        btnlogin.Text = "login";
+        btnlogin.UseVisualStyleBackColor = true;
+        // 
         // FrmLogin
         // 
         AutoScaleDimensions = new SizeF(8F, 20F);
         AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(426, 236);
-        Controls.Add(txtmatkhau);
+        ClientSize = new Size(373, 177);
+        Controls.Add(btnlogin);
+        Controls.Add(txtpassword);
         Controls.Add(label2);
         Controls.Add(txtUserName);
         Controls.Add(label1);
+        Margin = new Padding(3, 2, 3, 2);
         Name = "FrmLogin";
         Text = "Đăng nhập";
         ResumeLayout(false);
@@ -87,6 +99,7 @@ partial class FrmLogin
 
     private Label label1;
     private TextBox txtUserName;
-    private TextBox txtmatkhau;
+    private TextBox txtpassword;
     private Label label2;
+    private Button btnlogin;
 }
